@@ -1,0 +1,17 @@
+num = 12
+i=1
+while i<=10:
+    guess = int(input("Enter a number between 1 to 20 : "))
+    if num==guess:
+        print("You guessed the correct answer")
+    elif num > guess:
+        print("please guess lower number")
+    else:
+        print("please guess higher number")
+        break
+    print(10-i,"Guesses left")
+
+    i+=1
+
+if i > 10:
+    print("You have exceed the number of guesses\nGame over")
